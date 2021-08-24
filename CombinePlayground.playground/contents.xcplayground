@@ -3,5 +3,6 @@
     <pages>
         <page name='01.Publishers &amp; Subscribers'/>
         <page name='02.Subjects'/>
+        <page name='03.Subscriptions'/>
     </pages>
 </playground>
