@@ -14,6 +14,8 @@ import Combine
 
 ///Example 1. 한 개의 값만  "publish" 하고 complete
 let publisher1 = Just(111)
+debugPrint("publisher1: \(publisher1)")
+
 let subscription1 = publisher1.sink { value in
     debugPrint("publisher1으로 부터 받은 값: \(value)")
 }
@@ -21,6 +23,8 @@ let subscription1 = publisher1.sink { value in
 
 ///Example 2. 여러개의 값을 "publish"
 let publisher2 = [1,2,3,4,5].publisher
+debugPrint("publisher2: \(publisher2)")
+
 let subscription2 = publisher2.sink { value in
     debugPrint("publisher2로 부터 받은 값: \(value)")
 }
@@ -31,7 +35,7 @@ debugPrint("")
 class MyClass {
     var property: Int = 0 {
         didSet {
-            debugPrint("프로퍼티 값 할당: \(property)")
+            debugPrint("MyClass 객체의 프로퍼티에 값 할당: \(property)")
         }
     }
 }

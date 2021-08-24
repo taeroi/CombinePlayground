@@ -11,25 +11,25 @@ import Combine
 
 ///Example 1. subscribers에 값을 이어주는 subject
 ///-> subscribe 하기 전에 send를 하면 전달되지 않는다.
-let relay = PassthroughSubject<String, Never>()
-let subscription1 = relay.sink { value in
+let subject1 = PassthroughSubject<String, Never>()
+let subscription1 = subject1.sink { value in
     debugPrint("subscription1이 받은 값: \(value)")
 }
-relay.send("Hello")
-relay.send("World")
+subject1.send("Hello")
+subject1.send("World")
 
 
 ///Example 2. publisher가 subject를 subscribe
 let publisher = ["Park", "Tae", "Hwan"].publisher
-publisher.subscribe(relay)
+publisher.subscribe(subject1)
 
 
 ///Example 3. 'CurrentValueSubject'를 사용하여 최신 값을 유지하고 새로운  subscribers 전달
-///-> subscribe 하기 전에 한 send는 subscribe 이후에 전달된다.
-let relay2 = CurrentValueSubject<String, Never>("")
-relay2.send("initial test text")
+///-> subscribe 하기 전에 한 send 또한 subscribe 이후에 전달된다.
+let subject2 = CurrentValueSubject<String, Never>("")
+subject2.send("initial test text")
 
-let subscription2 = relay2.sink { value in
+let subscription2 = subject2.sink { value in
     debugPrint("subscription2이 받은 값: \(value)")
 }
-relay2.send("more test text")
+subject2.send("more test text")
