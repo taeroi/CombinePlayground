@@ -4,5 +4,6 @@
         <page name='01.Publishers &amp; Subscribers'/>
         <page name='02.Subjects'/>
         <page name='03.Subscriptions'/>
+        <page name='04.Cancellation&amp;Memory management'/>
     </pages>
 </playground>
