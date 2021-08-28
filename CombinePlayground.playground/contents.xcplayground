@@ -5,5 +5,6 @@
         <page name='02.Subjects'/>
         <page name='03.Subscriptions'/>
         <page name='04.Cancellation&amp;Memory management'/>
+        <page name='05.Simple Operators'/>
     </pages>
 </playground>

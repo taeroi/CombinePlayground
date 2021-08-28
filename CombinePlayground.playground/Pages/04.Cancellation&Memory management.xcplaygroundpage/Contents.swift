@@ -48,5 +48,5 @@ emitNextValue(from: [1,2,3,4,5,6,7,8], after: 0.5)
 DispatchQueue.main.asyncAfter(deadline: .now() + 2) {
     debugPrint("Nullify Object")
     
-//    object = nil
+    object = nil
 }
