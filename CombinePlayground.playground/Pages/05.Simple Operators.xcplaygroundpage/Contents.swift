@@ -54,8 +54,10 @@ debugPrint("-----publisher3 emits 1-----")
 publisher1.send(1)
 
 debugPrint("-----publisher3 emits 2-----")
-publisher1.send(2) 
+publisher1.send(2)
 
 debugPrint("-----publisher3 emits 3-----")
 publisher1.send(3)
+
+subscription3.cancel()
 
