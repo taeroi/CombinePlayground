@@ -30,9 +30,13 @@ let validateCredentialSubscription = Publishers
     }
 
 //[Simulate] :: username과 password를 입력받음
-usernamePublisher.send("parktaehwan")
-passwordPublisher.send("under12PWD")
-passwordPublisher.send("over12PWD!!!!")
+let usernameTextFiledTextString = "parktaehwan"
+let invalidpasswordTextFieldTextString = "under12PWD"
+let validpasswordTextFieldTextString = "over12PWD!!!!"
+
+usernamePublisher.send(usernameTextFiledTextString)
+passwordPublisher.send(invalidpasswordTextFieldTextString)
+passwordPublisher.send(validpasswordTextFieldTextString)
 
 
 //Example 2. Merge : 여러 Publisher의 스트림을 하나로 병합
