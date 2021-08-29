@@ -7,5 +7,6 @@
         <page name='04.Cancellation&amp;Memory management'/>
         <page name='05.Simple Operators'/>
         <page name='06.Combining Operators'/>
+        <page name='07.Scheduling'/>
     </pages>
 </playground>
