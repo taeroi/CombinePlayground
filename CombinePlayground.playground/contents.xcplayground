@@ -10,5 +10,6 @@
         <page name='07.Scheduling'/>
         <page name='08.Foundation &amp; Combine'/>
         <page name='09.Flatmap &amp; Error types'/>
+        <page name='10.@Publised Properties'/>
     </pages>
 </playground>
