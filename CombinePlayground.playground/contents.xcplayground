@@ -11,5 +11,6 @@
         <page name='08.Foundation &amp; Combine'/>
         <page name='09.Flatmap &amp; Error types'/>
         <page name='10.@Publised Properties'/>
+        <page name='11.Future &amp; Promises'/>
     </pages>
 </playground>
